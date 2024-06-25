@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@100..900&display=swap');
+
+body {
+  font-family: "Inter", 'DM Sans', sans-serif;
+  /* font-weight: 300; */
+}
+
+option {
+  color: black;
+}
+
+.ag-root-wrapper {
+  border: none !important;
+  font-family: "Inter", 'DM Sans', sans-serif !important;
+}
+
+/* Dont show column names for bottom grid */
+.bottom-grid-filesystem-table-container .ag-header{
+  display: none;
+}
+
+.top-grid-filesystem-table-container > :nth-child(1) .ag-root-wrapper,
+.bottom-grid-filesystem-table-container > :nth-child(1) .ag-root-wrapper
+{
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.top-grid-filesystem-table-container > :nth-child(1) .ag-root-wrapper,
+.bottom-grid-filesystem-table-container > :nth-child(1) .ag-root-wrapper
+{
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+.ag-theme-alpine {
+  --ag-selected-row-background-color: '#f0f4fc' !important;
+  /* 30em == 'sm' in chakra */
+  --ag-font-size: '0.3rem' !important;
+  /* Row heights */
+  /* --ag-row-height: '2.25rem' !important; */
+  /* header bg color */
+  --ag-header-background-color: white !important;
+  /* --ag-header-height: 30px; */
+  /* --ag-header-foreground-color: white; */
+  /* --ag-header-cell-hover-background-color: rgb(80, 40, 140);
+  --ag-header-cell-moving-background-color: rgb(80, 40, 140); */
+
+}
+
+.ag-checkbox-input-wrapper input[type=checkbox],
+.ag-checkbox-input[type=checkbox] {
+  accent-color: #eeeff1 !important;
+}
+
+.ag-paging-panel{
+  border-top: 1px solid #eeeff1 !important;
+}
+
+.ag-header{
+  border-bottom: 1px solid #eeeff1 !important;
+}
+
+.ag-pinned-left-header,
+.ag-theme-alpine .ag-header-cell,
+.ag-theme-alpine .ag-header-group-cell,
+.ag-theme-alpine .ag-ltr .ag-cell {
+  border-right: 1px solid #eeeff1 !important;
+}
+
+.ag-cell,
+.ag-cell-wrapper {
+  height: 100% !important;
+}
+
+.w-fill-available {
+  width: 100%;
+  width: -moz-available;
+  /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;
+  /* Mozilla-based browsers will ignore this. */
+  width: fill-available;
+}
+
+.transition-all {
+  transition-property: width, margin, opacity;
+}
+
+.ag-center-cols-viewport {
+  min-height: unset !important;
+}
+
+#schema-preview-grid-container .ag-cell{
+  align-content: center !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.entity-types-grid .ag-cell-wrapper{
+  overflow-y: scroll !important;
+}

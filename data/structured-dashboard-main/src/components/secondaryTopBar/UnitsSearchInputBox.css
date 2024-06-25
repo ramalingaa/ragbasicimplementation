@@ -1,0 +1,17 @@
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    padding: 10px;
+}
+
+.search button[type="submit"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .2s ease;
+}

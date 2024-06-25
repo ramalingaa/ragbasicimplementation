@@ -1,0 +1,25 @@
+.contents1 {
+    display: grid;
+    place-items: center;
+    transition: filter 0.2s ease-out, background-color 0.2s ease-out;
+    font-size: 16px;
+}
+
+.sample-drag-bar {
+    flex-shrink: 0;
+    width: 2px;
+    background-color: #eeeff1;
+    cursor: col-resize;
+    transition: background-color 0.15s 0.15s ease-in-out;
+}
+
+.sample-drag-bar.sample-drag-bar--dragging,
+.sample-drag-bar:hover {
+    background-color: #63B3ED;
+}
+
+.sample-drag-bar.sample-drag-bar--horizontal {
+    height: 2px;
+    width: 100%;
+    cursor: row-resize;
+}
